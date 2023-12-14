@@ -5,6 +5,7 @@ const AddtoCart = () => {
     return (
         <div>
             <button
+                className='btn btn-secondary'
                 onClick={() => {
                     alert("Hello")
                 }}

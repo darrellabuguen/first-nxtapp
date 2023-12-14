@@ -11,14 +11,24 @@ const UsersPage = async () => {
     return (
         <>
             <h1>Users</h1>
-            <p>{new Date().toTimeString()}</p>
-            <ul>
-                {
-                    users.map(user =>
-                        <li key={user.id}>{user.id + ". " + user.name}</li>
-                    )
-                }
-            </ul>
+            <table className='table table-bordered'>
+                <thead>
+                    <tr>
+                        <th>User ID</th>
+                        <th>Username</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {
+                        users.map(user =>
+                            <tr key={user.id} >
+                                <td>{user.id}</td>
+                                <td>{user.name}</td>
+                            </tr>
+                        )
+                    }
+                </tbody>
+            </table>
         </>
     )
 }

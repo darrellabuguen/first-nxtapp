@@ -3,7 +3,7 @@ import AddtoCart from './AddtoCart';
 
 const ProductCard = () => {
     return (
-        <div>
+        <div className='p-4 border'>
             <AddtoCart />
         </div>
     )
